@@ -1,0 +1,40 @@
+import type { ActionEnum } from '$lib/types/enums/action-enum';
+
+export type CsvColsFromFileType = {
+	colNames: string[];
+	columnFlags: {
+		hasActionCol: boolean;
+		hasAssignXRefCols: boolean;
+		hasAttrCols: boolean;
+		hasClassificationCols: boolean;
+		hasContractFileCols: boolean;
+		hasCrtCols: boolean;
+		hasDapiNodeCols: boolean;
+		hasEmailCols: boolean;
+		hasFileCols: boolean;
+		hasMetadataCols: boolean;
+		hasNewName: boolean;
+		hasNickNameCol: boolean;
+		hasObjectID: boolean;
+		hasObjectPath: boolean;
+		hasOwnerCols: boolean;
+		hasParentID: boolean;
+		hasParentPath: boolean;
+		hasPermCols: boolean;
+		hasPhysObjBoxCols: boolean;
+		hasPhysObjCircCols: boolean;
+		hasPhysObjCols: boolean;
+		hasPhysObjLabelCols: boolean;
+		hasPhysObjLocatorCols: boolean;
+		hasPhysObjXferCols: boolean;
+		hasRecManCols: boolean;
+		hasRevTypeName: boolean;
+		hasSpecificActions: boolean;
+		hasSystemAttrCols: boolean;
+		hasTargetPath: boolean;
+		hasVersionCols: boolean;
+		numColumns: number;
+		presumedAction: ActionEnum;
+		presumedDisplayAction: string;
+	};
+};

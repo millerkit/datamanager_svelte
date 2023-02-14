@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+@import "variables";
+@import "../node_modules/bulma/bulma";
+@import '../node_modules/@creativebulma/bulma-collapsible/src/sass';
+
+.is-size-6-point-five {
+  font-size: 0.85rem;
+}
+
+//.field, .file-name, .select select, .textarea, .input, .button, .control {
+//  font-size: 0.95rem;
+//}
+
+.help {
+  font-size: 0.85rem;
+}

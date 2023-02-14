@@ -1,2 +1,7 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<div class="level">
+  <div class="level-left">
+    <div class="level-item">
+      <div class="title">Dashboard</div>
+    </div>
+  </div>
+</div>

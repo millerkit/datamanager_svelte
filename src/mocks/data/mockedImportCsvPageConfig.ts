@@ -1,0 +1,107 @@
+import { TargetPathMeaningEnum } from '$lib/types/enums/target-path-meaning-enum';
+import { ContainerCollisionOptionsEnum } from '$lib/types/enums/container-collision-options-enum';
+import { ContainerTypeEnum } from '$lib/types/enums/container-type-enum';
+import { RootFileLocEnum } from '$lib/types/enums/root-file-loc-enum';
+import { DocCollisionOptionsEnum } from '$lib/types/enums/doc-collision-options-enum';
+import { LogLevelEnum } from '$lib/types/enums/log-level-enum';
+import { ActionEnum } from '$lib/types/enums/action-enum';
+import { AttrSourceTypeEnum } from '$lib/types/enums/attr-source-type-enum';
+import { WhenOptionEnum } from '$lib/types/enums/when-option-enum';
+import type { ImportCsvPageConfigType } from '$lib/types/import/import-csv-page-config-type';
+
+export const mockedImportCsvPageConfig: ImportCsvPageConfigType = {
+	savedJobs: [
+		{
+			action: ActionEnum.UpdateObjects,
+			actionMetadata: true,
+			actionRename: true,
+			attrSourceType: AttrSourceTypeEnum.SourceNode,
+			autoCreateFolders: true,
+			checkRootPath: false,
+			colNames: [
+				'Line',
+				'Status',
+				'$ADVVERSIONING',
+				'$CATALOG',
+				'$CREATEDATE',
+				'$CREATOR',
+				'$DESCRIPTION',
+				'$MODIFYDATE',
+				'$NEWNAME',
+				'$NICKNAME',
+				'$OBJECTID',
+				'$OBJECTNAME',
+				'$OBJECTPATH',
+				'$OBJECTTYPE',
+				'$PARENTPATH',
+				'$RESERVEDBY',
+				'$TARGETPATH',
+				'Content Server Categories:Engineering Services-Drawings:Additional Work Order No',
+				'Content Server Categories:Engineering Services-Drawings:CAP Dwg No',
+				'Content Server Categories:Engineering Services-Drawings:CAP Location',
+				'Content Server Categories:Engineering Services-Drawings:Contractor',
+				'Content Server Categories:Engineering Services-Drawings:Discipline',
+				'Content Server Categories:Engineering Services-Drawings:Feature',
+				'Content Server Categories:Engineering Services-Drawings:IsAttachedCat',
+				'Content Server Categories:Engineering Services-Drawings:MFG Dwg No',
+				'Content Server Categories:Engineering Services-Drawings:Original Work Order',
+				'Content Server Categories:Engineering Services-Drawings:Priority Drawings',
+				'Content Server Categories:Engineering Services-Drawings:Project Dwg No',
+				'Content Server Categories:Engineering Services-Drawings:Rev Description',
+				'Content Server Categories:Engineering Services-Drawings:Rev Eng Approval',
+				'Content Server Categories:Engineering Services-Drawings:Rev Eng Approval Date',
+				'Content Server Categories:Engineering Services-Drawings:Rev Letter',
+				'Content Server Categories:Engineering Services-Drawings:Rev Mgr Approval',
+				'Content Server Categories:Engineering Services-Drawings:Rev Mgr Approval Date',
+				'Content Server Categories:Engineering Services-Drawings:Rev Work Order No',
+				'Content Server Categories:Engineering Services-Drawings:Sheet No',
+				'Content Server Categories:Engineering Services-Drawings:Subject',
+				'Content Server Categories:Engineering Services-Drawings:Subject OLD',
+				'Content Server Categories:Engineering Services-Drawings:System',
+				'Content Server Categories:Engineering Services-Drawings:System of Record',
+				'Content Server Categories:Engineering Services-Drawings:Type'
+			],
+			containerOption: ContainerCollisionOptionsEnum.Update,
+			containerOptionUpdateMd: true,
+			containerType: ContainerTypeEnum.Folder,
+			csvArchivePath: 'CSVArchive',
+			day_pattern: 1,
+			day_recurrence: 1,
+			defaultFileExtension: 'pdf',
+			docOption: DocCollisionOptionsEnum.Update,
+			docOptionAddVersion: true,
+			docOptionUpdateMd: true,
+			enabled: true,
+			end_time: null,
+			fileArchivePath: 'FileArchive',
+			inheritParent: true,
+			jobId: 3,
+			jobName: 'UpdateEnterpriseMetadata',
+			jobSubtype: 'ImportCsv',
+			jobType: 'ImportJob',
+			jobdesc: null,
+			logLevel: LogLevelEnum.Default,
+			mdCats: true,
+			mdDapi: true,
+			newProfileId: null,
+			notify_emails: null,
+			one_time_date: '2023-02-01T00:00:00',
+			one_time_time: '16:09:37',
+			profileId: 3,
+			rootFileLoc: RootFileLocEnum.RelativeToCsvPath,
+			rootSourcePath: 'C:\\ImportExport\\Documents\\metadata.csv',
+			rootTargetPath: 'Enterprise',
+			runAsUserName: null,
+			schedule_type: 1,
+			sourceOption: 'server',
+			specific_at_time_1: null,
+			specific_at_times_count: 1,
+			start_time: null,
+			targetPathMeaning: TargetPathMeaningEnum.TargetPathIsObject,
+			time_every_integer: null,
+			time_every_unit: 1,
+			time_pattern: 1,
+			whenOption: WhenOptionEnum.Now
+		}
+	]
+};
